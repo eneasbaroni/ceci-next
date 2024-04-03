@@ -1,0 +1,133 @@
+#purchase {
+    width: 100%;
+    background-image: url(/images/index/cloud.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: calc(100vh - 4rem - 3rem);
+    margin-top: -0.5rem;
+    padding-top: 0.5rem;
+
+    & h1 {
+      text-align: center;
+      line-height: 2.8rem;
+    }
+
+    p {
+        width: 800px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 3rem;
+
+        @media screen and (max-width: 992px) {
+            width: 80vw;
+        }
+    }
+
+    & form {
+      width: 800px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 992px) {
+        width: 80vw;
+      }
+
+      & input {
+        display: flex;
+        width: 40%;
+        height: 2rem;
+        padding: 0.5rem 1rem 0.5rem 0;
+        margin-bottom: 1rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid var(--main-color);
+        margin-inline: 1rem;
+
+        &:focus {
+          outline: none;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 80%;
+        }
+      }
+
+      & button {
+        width: 80%;
+        height: 3rem;
+        margin-top: 1rem;
+        background: transparent;
+        cursor: pointer;
+        border: none;
+        margin-left: 1rem;
+
+        & p {
+          width: 100px;
+          padding: 0.5rem 1rem;
+          background: transparent;
+          border: 1px solid var(--main-color);
+          border-radius: 1.5rem;
+          transition: 0.5s ease-in-out;
+          justify-self: center;
+          align-self: start;
+          margin-left: 0.5rem;
+          cursor: pointer;
+
+          &:hover {
+            background-color: var(--main-bg);
+            color: #968ab9;
+          }
+        }
+      }
+    }
+  }
+
+  .displayNone {
+    display: none !important;
+  }
+
+  .loaderContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(70, 70, 70, 0.2);
+    backdrop-filter: blur(10px);
+  }
+
+  .loader {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+  }
+
+  .loader:after {
+    content: " ";
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid rgb(173, 86, 86);
+    border-color: rgb(173, 86, 86) transparent rgb(173, 86, 86) transparent;
+    animation: loader 1.2s linear infinite;
+  }
+
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,159 @@
+#espacio {
+    width: 100%;
+    min-height: calc(100vh - 4rem - 3rem - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(/images/index/cloud.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    & h1 {
+        z-index: 2;
+    }
+
+    & .circle {
+        width: 60vw;
+        height: 60vw;
+        position: absolute;
+        border-radius: 50%;
+        right: -25%;
+        top: -40%;
+        background-color: var(--second-bg);
+        z-index: 1;
+        display: none;
+    }
+
+    & .background {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 1;
+        object-fit: contain;
+        object-position: right top;
+        top: 0;
+    }
+
+    & .infoContainer {
+        width: 100%;
+        padding: 0 5rem;
+        max-width: 1500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0rem;
+        z-index: 2;
+
+        @media screen and (max-width: 992px) {
+            padding-top: 2rem;
+        }
+
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+            padding: 2rem;
+        }
+
+        & img {
+            width: 30%;
+            height: 100%;
+            /* aspect-ratio: 1/1.5;  */
+            border-radius: 50rem;
+            object-fit: cover;
+
+            @media screen and (max-width: 576px) {
+                width: 60%;
+                height: auto;
+                aspect-ratio: 1/1.5;
+            }
+        }
+
+        & .textInfo {
+            width: 70%;
+            height: 100%;
+            text-align: left;
+            padding: 2rem 1rem 2rem 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            @media screen and (max-width: 576px) {
+                padding: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            & h1 {
+                z-index: 2;
+                text-align: right;
+                margin-bottom: 0;
+
+                @media screen and (max-width: 576px) {
+                    text-align: center;
+                }
+            }
+
+            & h3 {
+                width: 100%;
+                text-align: right;
+                padding-left: 20%;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid var(--main-color-50);
+                margin-top: 0;
+
+                @media screen and (max-width: 576px) {
+                    text-align: center;
+                    padding-left: 0;
+                }
+            }
+
+            & p {
+                line-height: 1.8rem;
+
+                & span {
+                    font-family: "moneta", serif;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    padding-inline: 0.5rem;
+                    background: linear-gradient(0deg, transparent 0%,transparent 35%,white 36%,white 70%, transparent 71%, transparent 100%);
+                }
+            }
+        }
+    }
+
+    & a {
+        font-family: "moneta", serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        height: auto;
+        margin-bottom: 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 1.5rem;
+        border: solid 2px #968ab9;
+        background-color: #968ab9;
+        color: var(--main-bg);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--main-bg);
+            color: #968ab9;
+        }
+    }
+
+    & .textInfoP {
+        margin: 1rem auto;
+        width: 100%;
+        padding: 0 5rem;
+        max-width: 1500px;
+
+        @media screen and (max-width: 576px) {
+            padding: 0 2rem;
+            text-align: center;
+        }
+    }
+}
