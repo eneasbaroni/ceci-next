@@ -60,8 +60,8 @@ const Books = () => {
                 </p>
             </div>
         </div>
-        <Link href="/purchase/ctb001">Adquirir Libro</Link>
-        {/* <a href="https://librelibro.com.ar/productos/un-espacio-para-sanar/" target="_blank" rel="noreferrer">Adquirir Libro</a> */}
+        {/* <Link href="/purchase/ctb001">Adquirir Libro</Link> */}
+        <a href="https://librelibro.com.ar/productos/un-espacio-para-sanar/" target="_blank" rel="noreferrer">Adquirir Libro</a>
     </main>
   )
 }
