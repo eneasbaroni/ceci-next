@@ -53,11 +53,11 @@ const Header = () => {
                 </Link>    
                 <img id="menuToggle" src='/images/header/menu.svg' alt='menu' className='menu' onClick={handleMenu}/>
                 <div id='MobileNav' className={(menuHide && 'menuHide') + ' ' + (noHeight && 'noHeight')}>
-                    <Link href='/' className='navLink'>Inicio</Link>
-                    <Link href='/books' className='navLink'>Mis Libros</Link>
+                    <Link href='/' className='navLink' onClick={handleMenu}>Inicio</Link>
+                    <Link href='/books' className='navLink' onClick={handleMenu}>Mis Libros</Link>
                     {/* <!-- <a href='/blog' className='navLink'>Blog</a> --> */}
-                    <Link href='/about' className='navLink'>Sobre mi</Link>
-                    <Link href='/contact' className='navLink'>Contacto</Link>
+                    <Link href='/about' className='navLink' onClick={handleMenu}>Sobre mi</Link>
+                    <Link href='/contact' className='navLink' onClick={handleMenu}>Contacto</Link>
                 </div>
             </header>
         }

@@ -13,6 +13,7 @@ import "./contact/Contact.css"
 import "./purchase/[id]/Purchase.css"
 import "./components/Loader.css"
 import "./components/EmailModal.css"
+import "./checkout/[status]/Checkout.css"
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 const DynamicHeader = dynamic(async () => Header, { ssr: false });

@@ -55,9 +55,9 @@
         @media screen and (max-width: 992px) {
           width: 80%;
         }
-      }
+      }      
 
-      & button {
+      & .formBtn {
         width: 80%;
         height: 3rem;
         margin-top: 1rem;
@@ -131,3 +131,14 @@
       transform: rotate(360deg);
     }
   }
+
+/* Mercado Pago */
+.mpBtnContainer {
+  width: 500px;
+  margin: auto;  
+
+  p {
+    width: auto !important;
+    text-align: center !important;
+  }
+}

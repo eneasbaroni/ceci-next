@@ -1,0 +1,60 @@
+#checkout {
+    width: 100%;
+    background-image: url(/images/index/cloud.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: calc(100vh - 4rem - 3rem);
+    margin-top: -0.5rem;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h1 {
+      text-align: center;
+      line-height: 2.8rem;
+    }
+
+    p {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 2rem;        
+    }
+
+    a {
+        font-family: "moneta", serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        height: auto;
+        margin-top: 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 1.5rem;
+        border: solid 2px #968ab9;
+        background-color: #968ab9;
+        color: var(--main-bg);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--main-bg);
+            color: #968ab9;
+        }
+    }
+
+    .contactLink {
+        border: none;
+        background: none;
+        color: #968ab9;
+        padding: 0;
+        margin: 0;
+
+        &:hover {
+            background-color: transparent;
+            color: #968ab9;
+        }
+    }
+
+}

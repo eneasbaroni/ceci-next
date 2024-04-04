@@ -14,8 +14,7 @@
   .loader {
     display: flex;
     width: 55px;
-    height: 55px;
-    margin-top: calc(50vh - 55px);
+    height: 55px;   
     margin-inline: auto;   
   }
   
@@ -26,8 +25,8 @@
     height: 2rem;
     margin: 8px;
     border-radius: 50%;
-    border: 6px solid var(--second-color);
-    border-color: var(--second-color) transparent var(--second-color) transparent;
+    border: 6px solid rgb(63, 29, 35);
+    border-color: rgb(63, 29, 35) transparent rgb(63, 29, 35) transparent;
     animation: loader 1.2s linear infinite;
   }
   
