@@ -41,12 +41,11 @@ const Main = () => {
           <div className="circle"></div>
           <h1>
             <br />Aprende a transitar la muerte de un ser querido de
-            manera sana <br /><br /><span>✹</span>
+            manera consciente  <br /><br /><span>✹</span>
           </h1>
         </div>
         <p>
-          El papel de la educación es ayudarte a ser más vos y menos como
-          los demás. Llevándote por caminos que te permitan explorar y
+          El papel de la educación es acompañarte en este proceso. Llevándote por caminos que te permitan explorar y
           comprender tu personalidad y los significados de tus
           experiencias vivenciales. Fundamentalmente de aquellas que
           causen dolor.<br />
@@ -58,9 +57,9 @@ const Main = () => {
           evitar complicar el proceso de duelo, fomentando el desarrollo
           integral de la persona, incluyendo su autorrealización y
           bienestar emocional. Comprendiendo que es mucho más que un
-          diagnóstico o proceso que le toca transitar.<br />
+          moomento que le toca transitar.<br />
           En este espacio aprenderás, a través del uso de herramientas y
-          recursos específicos, a duelar de manera sana la trascendencia
+          recursos específicos, a duelar de manera consciente y responsable la trascendencia
           de un ser querido y encontrarás apoyo y guía para el camino del
           dolor que hoy te toca transitar.<br />
           El objetivo es ayudarte a desplegar tus potencialidades,

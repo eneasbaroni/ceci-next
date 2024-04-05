@@ -22,9 +22,9 @@ const About = () => {
                     especializada en Tanatología y otros procesos relacionados con el
                     Duelo y la Muerte.<br />
                      Después de 12 años de experiencia en el ámbito educativo, me tocó
-                    vivir la dura experiencia de perder a mi hijo Jerito. Lo que me
+                    vivir la dura experiencia de la muerte de mi hijo Jerito. Lo que me
                     transformó muchísimo y me motivó a apostar en mi formación para
-                    convertirla en una herramienta valiosa para el mundo.<br />
+                    convertirla en una herramienta valiosa para mí y para el mundo.<br />
                      Mi propio proceso de duelo me brinda un conocimiento profundo y
                     empático del terreno, que me permite entender y acompañar las
                     vivencias de quienes transitan por esta difícil etapa de la vida.
@@ -35,7 +35,7 @@ const About = () => {
                     a todas las personas, para ayudarles a transitar su duelo de manera
                     sana y libre. Esta información puede ser trabajada tanto en el
                     momento del duelo como en el proceso previo, para prepararnos de
-                    manera más efectiva ante la pérdida de un ser querido.<br />
+                    manera más efectiva ante la muerte de un ser querido.<br />
                      Mi intención es contribuir a una reconceptualización de la muerte y
                     del proceso del duelo desde el ámbito educativo, proponiendo
                     encuentros para darles espacio.
