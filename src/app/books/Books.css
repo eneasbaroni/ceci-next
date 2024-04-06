@@ -52,7 +52,7 @@
             aspect-ratio: 1/1.7; 
             border-radius: 50rem;
             object-fit: cover;
-            margin-top: 6rem;
+            margin-top: 10rem;
 
             @media screen and (max-width: 576px) {
                 width: 60%;

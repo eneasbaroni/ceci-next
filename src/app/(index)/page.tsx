@@ -71,6 +71,34 @@ const Main = () => {
           proponiendo encuentros para darles espacio.
         </p>
       </section>
+
+      <section id="homeTalleres">
+        <h3 className="talleresTitel">Reconocimientos</h3>
+        {/* <h4>Reconocimientos obtenidos</h4> */}
+        <div id="talleres">
+          <div>
+            <h4>Un espacio para sanar</h4>
+            <p>
+            Fue reconocido de Interés municipal en la ciudad de Villa María, el 13 de octubre del 2022, en el marco del lanzamiento de su tercera reimpresión.
+            </p>
+          </div>
+          <div>
+            <h5>Taller</h5>
+            <h4>&quot;Murió mi pareja: ¿cómo sigue mi vida?&quot;</h4>
+            <p>
+              Fue Declarado de Interés municipal en Villa María el día 15 de junio del 2023.
+            </p>
+          </div>
+          <div>
+            <h4>Cecilia Torres</h4>
+            <p>
+            La ciudad de Villa Nueva dictó una resolución el día 20 de marzo del 2024 en la que reconocen a la escritora y tanatóloga Cecilia Torres por su acompañamiento a la comunidad brindándoles a las personas en duelo contención y apoyo a través de sus libros.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
     </main>
   )
 }

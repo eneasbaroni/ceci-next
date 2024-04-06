@@ -15,7 +15,7 @@ const About = () => {
   return (
     <main id="aboutContainer">
         <div id="about">
-            <img src="/images/about/selfie-01.jpg" alt="Cecilia Torres" />
+            <img src="/images/about/aboutB.png" alt="Cecilia Torres" />
             <div className="aboutInfo">
                 <p>
                     ¡Hola! Soy Cecilia Torres, Licenciada en Gestión Educativa

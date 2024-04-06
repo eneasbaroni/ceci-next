@@ -27,34 +27,32 @@ const Books = () => {
                 </h3>
                 <p>
                     En este libro cuento la experiencia más dura que le puede
-                    tocar a un papá y a una mamá.
+                    tocar a un papá y a una mamá: transitar la muerte de un hijo.
                 </p>
+
                 <p>
-                    Si bien es un libro que aborda el dolor, la idea es
-                    mostrarte la herramienta del amor, el amor que puede
-                    salvarte. Mostrandote que podemos ir del dolor emocional al
-                    bienestar.<br />Es un libro de amor que ha sido luz para
-                    muchos en su primera edición.
+                Si bien es un libro que trata, inevitablemente, el dolor, también muestra cómo he podido ir transformándolo en amor, en amor como faro. El amor que puede salvarnos. Mostrándote que podemos ir del dolor emocional al bienestar. Y que llegar al bienestar emocional es posible en duelo.
+                <br/>
+                Es un libro de amor que ha sido luz para muchos y que hoy se encuentra próximo a su cuarta reimpresión.
+                <br/>
+                En este libro abordo el concepto de muerte, desde una pequeña mirada comparativa, haciendo referencia a que la mirada sostenida que se tuvo durante algún tiempo no ha servido de mucho cuando observamos a muchos padres en duelo tener “Una vida sin vida”.
+                <br/>La mirada que planteo de transitar un duelo es que el doliente “No sufra de más” que pueda volver a conectarse con su propia vida, de una manera más consciente y desde el amor de su ser querido.
                 </p>
                 <br />
                 <p>
                     Este libro puede servirte si:
-                    <br />• Estás transitando un Duelo por la pérdida física de
-                    un ser querido.
-                    <br />• Si tenés un familiar o amigo que está transitando un
-                    Duelo.
+                    <br />• Estás transitando un Duelo por la pérdida física de un ser querido.
+                    <br />• Si tenés un familiar o amigo que está transitando un Duelo.
                     <br />• Si sos de aquellos que aman valorar la vida.
-                    <br />• Si crees que la respuesta<span>es siempre el amor</span>
+                    <br />• Si crees que la respuesta ante lo adverso <span>es siempre el amor</span>
                 </p>
                 <br />
                 <p>
                     En el mismo te cuento:
                     <br />• El hecho que cambió mi vida.
                     <br />• El proceso de la muerte.
-                    <br />• El duelo, para los que lo transitan y para aquellos
-                    que acompañan.
-                    <br />• Herramientas que pueden servirte para aprender de
-                    las adversidades.
+                    <br />• El duelo, para los que lo transitan y para aquellos que acompañan.
+                    <br />• Herramientas que pueden servirte para aprender de las adversidades.
                     <br />• Autoconocimiento
                     <br />• <span>Amor y Espiritualidad</span>
                 </p>
