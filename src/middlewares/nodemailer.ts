@@ -75,8 +75,9 @@ const newPurchase = async (userMail: string, status: string) => {
 
 }
 
-const notification = async (userMail: string, paymentId: string, status: string) => {
+const notification = async (userMail: string, paymentId: string, phone: string, status: string) => {
     const email = userMail;
+       console.log("🚀 ~ notification ~ email:", email)
        
 
     const emailContent = {
@@ -86,7 +87,8 @@ const notification = async (userMail: string, paymentId: string, status: string)
     text: "Cecilia Torres",
     html: `
     <h3 style='color: black'>Nuevo Pedido de: ${email}</h3>    
-    <p>Email: ${email}</p>     
+    <p>Email: ${email}</p>    
+    <p>Telefono: ${phone}</p> 
     <p>Id del pago es: ${paymentId}</p> 
     <p>El estado del pago es: ${status}</p> 
     `,

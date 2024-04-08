@@ -9,6 +9,7 @@ const client = new MercadoPagoConfig({
 
 export async function POST(req: NextRequest) {
     const {payer, book} = await req.json()
+    
 
     try {
         const body = {
@@ -37,8 +38,8 @@ export async function POST(req: NextRequest) {
                 pending: `${BASE_URL}/checkout/pending`,
             },
             auto_return: "approved",
-            //notification_url: `https://s2d59brn-3000.brs.devtunnels.ms/api/notification/${payer.identification}`
-            notification_url: `${BASE_URL}/api/notification/${payer.identification}`
+            //notification_url: `https://s2d59brn-3000.brs.devtunnels.ms/api/notification/${payer.identification}?phone=${payer.phone}`
+            notification_url: `${BASE_URL}/api/notification/${payer.identification}?phone=${payer.phone}`
             //notification_url: `https://dart-server-hd0v.onrender.com/notifications/${payer.identification}/125`
         }             
 
