@@ -25,7 +25,7 @@ const Purchase = ({ params: { id } }: { params: { id: string } }) => {
         <div className="loader"></div>
       </div>
       <h1>Adquirir &quot;{book?.title}&quot;</h1> 
-      <p>Para adquirir el libro, completa el siguiente formulario con tus datos para habilitar la pasarela de pago</p>
+      <p>Para adquirir el libro, completa el siguiente formulario con tus datos para habilitar la pasarela de pago. <br/>El costo de envío no está incluido, el mismo se abona al momento de coordinar la entrega.</p>
       <UserForm book={book!}/>   
     </main>
 
