@@ -14,7 +14,7 @@ Both the Frontend and the Backend were developed with NextJS.
    ```
     para instalar todas las dependecias del proyecto
 
-4. Create an .env file with the necessary environment variables. Take a look at the .envexample file
+4. Create an .env file with the necessary environment variables. Take a look at the env.example file
 
 3. Deploy the project 
 
