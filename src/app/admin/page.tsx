@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useSession, signIn, signOut, getSession } from "next-auth/react";
-import VideoForm from "./components/videoForm";
+import VideoForm from "./components/memoraForm";
 import Loader from "../components/Loader";
+import ProfileContainer from "./components/profileContainer";
 
 const Admin = () => {
     const { data: session, status } = useSession();
@@ -13,16 +14,12 @@ const Admin = () => {
             <h1 className="m-0 text-center">Panel Administrador</h1>
             {status === "loading" && <Loader />}
             {session ? (
-                <div className="flex flex-col min-h-[calc(100vh-11rem)] pb-4 items-center justify-between">
+                <div className="flex flex-col min-h-[calc(100vh-11rem)] pb-4 items-center justify-start relative">
                     <div className="flex flex-col items-center justify-center">
                         <h3 className="text-center mt-2 mb-2">
                             Bienvenido {session.user?.name}
                         </h3>
-                        <img
-                            src={session.user?.image!}
-                            alt="logo"
-                            className="rounded-full w-20 h-20"
-                        />
+                        <ProfileContainer url={session.user?.image!} />
                     </div>
                     <div>
                         {session.user?.email === "eneasbaroni@gmail.com" ? (
@@ -40,12 +37,6 @@ const Admin = () => {
                                 </Link>
                             </>
                         )}
-                        <button
-                            onClick={() => signOut()}
-                            className="flex gap-2 align-center justify-center bg-[#968ab9] text-white rounded-md py-2 px-4 m-auto mt-4 hover:bg-[#fbfbfb] hover:text-[#968ab9] transition-all duration-300"
-                        >
-                            Cerrar sesión
-                        </button>
                     </div>
                 </div>
             ) : (

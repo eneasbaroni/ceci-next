@@ -4,19 +4,19 @@ import { Inter } from "next/font/google";
 import { Source_Sans_3 } from "next/font/google";
 import { Raleway } from "next/font/google";
 import "./globals.css";
-import "./components/header.css";
-import "./components/footer.css";
-import "./(index)/home.css";
+import "../components/header.css";
+import "../components/footer.css";
+import "./(withLayout)/(index)/home.css";
 import "./books/Books.css";
-import "./about/About.css";
+import "./(withLayout)/about/About.css";
 import "./contact/Contact.css";
 import "./purchase/[id]/Purchase.css";
-import "./components/Loader.css";
-import "./components/EmailModal.css";
+import "../components/Loader.css";
+import "../components/EmailModal.css";
 import "./checkout/[status]/Checkout.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import { Providers } from "./Providers";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { Providers } from "../Providers";
 
 const DynamicHeader = dynamic(async () => Header, { ssr: false });
 

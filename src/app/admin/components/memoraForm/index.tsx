@@ -23,7 +23,7 @@ const SubmitBtn = () => {
     );
 };
 
-const VideoForm = () => {
+const MemoraForm = () => {
     const ref = useRef<HTMLFormElement>(null); // For form reset
     const [state, action] = useFormState(handleSubmit, null);
     const error = state?.error;
@@ -37,8 +37,6 @@ const VideoForm = () => {
 
     return (
         <>
-            {error && <p className="text-red-500 text-center">{error}</p>}
-            {success && <p className="text-green-500 text-center">{success}</p>}
             <form
                 className="flex flex-col gap-4 w-auto m-auto mt-4"
                 action={action}
@@ -98,10 +96,14 @@ const VideoForm = () => {
                         />
                     </div>
                 </div>
+                {error && <p className="text-red-500 text-center">{error}</p>}
+                {success && (
+                    <p className="text-green-500 text-center">{success}</p>
+                )}
 
                 <SubmitBtn />
             </form>
         </>
     );
 };
-export default VideoForm;
+export default MemoraForm;
