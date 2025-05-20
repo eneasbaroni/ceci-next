@@ -77,7 +77,7 @@ const VideoContainer = ({ data }: IProps) => {
 
             {(data.codigo === "" || pass) && (
                 <div
-                    className="rounded-t-[1rem] overflow-hidden cursor-pointer p-2"
+                    className="rounded-t-[1rem] overflow-hidden cursor-pointer p-2 h-screen"
                     onClick={handlePlay}
                 >
                     <iframe
@@ -85,7 +85,8 @@ const VideoContainer = ({ data }: IProps) => {
                         /* width="288"
                         height="100" */
                         allowFullScreen
-                        className="h-[calc(100vh-1rem)] aspect-[9/17] m-auto rounded-t-[1rem] overflow-hidden"
+                        //className="h-[calc(100vh-1rem)] aspect-[9/17] m-auto rounded-t-[1rem] overflow-hidden"
+                        className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden"
                     ></iframe>
                 </div>
             )}
