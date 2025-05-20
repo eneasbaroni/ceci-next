@@ -85,7 +85,7 @@ const VideoContainer = ({ data }: IProps) => {
                         /* width="288"
                         height="100" */
                         allowFullScreen
-                        className="h-[calc(100vh-1rem)] aspect-[9/16] m-auto rounded-t-[1rem] overflow-hidden"
+                        className="h-[calc(100vh-1rem)] aspect-[9/17] m-auto rounded-t-[1rem] overflow-hidden"
                     ></iframe>
                 </div>
             )}
