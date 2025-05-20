@@ -77,7 +77,7 @@ const VideoContainer = ({ data }: IProps) => {
 
             {(data.codigo === "" || pass) && (
                 <div
-                    className="rounded-t-[1rem] overflow-hidden cursor-pointer p-2 h-screen"
+                    className="rounded-t-[1rem] overflow-hidden cursor-pointer p-2 h-[100dvh]"
                     onClick={handlePlay}
                 >
                     <iframe
