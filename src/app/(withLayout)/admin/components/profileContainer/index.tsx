@@ -8,7 +8,7 @@ const ProfileContainer = ({ url }: { url: string }) => {
         setShowBtn(!showBtn);
     };
     return (
-        <div className="flex flex-col items-center justify-center absolute top-[-3rem] right-12 w-32 ">
+        <div className="flex flex-col items-center justify-center absolute top-[-3rem] mobile:bottom-[-10rem] right-12 mobile:right-1/2 translate-x-1/2 w-32 ">
             <img
                 src={url}
                 alt="logo"

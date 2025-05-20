@@ -1,6 +1,6 @@
-import mongoose, { Schema, models} from "mongoose";
+import mongoose, { Schema, models } from "mongoose";
 
-const memoraCollections = 'memora'
+const memoraCollections = "memora";
 const memoraSchema = new Schema(
     {
         ci: {
@@ -28,13 +28,12 @@ const memoraSchema = new Schema(
             required: true,
             unique: true,
         },
-        
     },
     { timestamps: true }
 );
 
 //const User = mongoose.model(userCollections, userSchema)
 
-const Memora = models.user || mongoose.model(memoraCollections, memoraSchema)
+const Memora = models.memora || mongoose.model(memoraCollections, memoraSchema);
 
-export default Memora
+export default Memora;

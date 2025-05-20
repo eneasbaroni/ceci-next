@@ -33,16 +33,3 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ message: error.message }, { status: 500 }); // Devuelve 500 Internal Server Error para otros errores
     }
 }
-
-export async function GET(req: NextRequest) {
-    const ci = req.nextUrl.searchParams.get("ci") as string;
-    if (!ci) return NextResponse.json({ message: "CI is required" });
-
-    try {
-        await connectMongoDB();
-        const user = await Memora.findOne({ ci });
-        return NextResponse.json(user);
-    } catch (error: any) {
-        return NextResponse.json({ message: error.message });
-    }
-}

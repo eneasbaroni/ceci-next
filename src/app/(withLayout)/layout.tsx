@@ -1,14 +1,15 @@
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
+import localfont from "next/font/local";
 import { Inter } from "next/font/google";
 import { Source_Sans_3 } from "next/font/google";
 import { Raleway } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import "../components/header.css";
 import "../components/footer.css";
-import "./(withLayout)/(index)/home.css";
+import "./(index)/home.css";
 import "./books/Books.css";
-import "./(withLayout)/about/About.css";
+import "./about/About.css";
 import "./contact/Contact.css";
 import "./purchase/[id]/Purchase.css";
 import "../components/Loader.css";
@@ -19,6 +20,16 @@ import Footer from "../components/Footer";
 import { Providers } from "../Providers";
 
 const DynamicHeader = dynamic(async () => Header, { ssr: false });
+
+const moneta = localfont({
+    src: [
+        {
+            path: "../../fonts/Moneta-Regular.ttf",
+            weight: "400",
+        },
+    ],
+    variable: "--font-moneta",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 const source_sans_3 = Source_Sans_3({
@@ -46,7 +57,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={raleway.className}>
+            <body className={`${raleway.className} ${moneta.variable} `}>
                 <Providers>
                     <DynamicHeader />
                     {children}

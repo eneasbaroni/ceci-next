@@ -6,7 +6,16 @@ module.exports = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                moneta: ["var(--font-moneta)"],
+            },
+            screens: {
+                notebook: { max: "1280px" },
+                tablet: { max: "1024px" },
+                mobile: { max: "768px" },
+            },
+        },
     },
     plugins: [],
 };

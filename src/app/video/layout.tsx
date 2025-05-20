@@ -1,29 +1,7 @@
-import dynamic from "next/dynamic";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Source_Sans_3 } from "next/font/google";
+
 import { Raleway } from "next/font/google";
-import "./globals.css";
-import "./components/header.css";
-import "./components/footer.css";
-import "./(index)/home.css";
-import "./books/Books.css";
-import "./about/About.css";
-import "./contact/Contact.css";
-import "./purchase/[id]/Purchase.css";
-import "./components/Loader.css";
-import "./components/EmailModal.css";
-import "./checkout/[status]/Checkout.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import { Providers } from "../Providers";
-
-const DynamicHeader = dynamic(async () => Header, { ssr: false });
-
-const inter = Inter({ subsets: ["latin"] });
-const source_sans_3 = Source_Sans_3({
-    subsets: ["latin"],
-});
+import "../globals.css";
 
 const raleway = Raleway({
     subsets: ["latin"],
@@ -46,13 +24,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={raleway.className}>
-                <Providers>
-                    <DynamicHeader />
-                    {children}
-                    <Footer />
-                </Providers>
-            </body>
+            <body className={raleway.className}>{children}</body>
         </html>
     );
 }

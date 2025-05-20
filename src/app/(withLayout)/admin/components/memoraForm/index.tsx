@@ -42,14 +42,14 @@ const MemoraForm = () => {
                 action={action}
                 ref={ref}
             >
-                <div className="flex flex-row gap-8 justify-between">
+                <div className="flex flex-row gap-8 mobile:gap-2 justify-between">
                     <div className="flex flex-col gap-2">
                         <input
                             type="text"
                             id="ci"
                             name="ci"
                             placeholder="ci"
-                            className="bg-transparent border-b border-black w-[320px] focus:outline-none"
+                            className="bg-transparent border-b border-black w-[320px] mobile:w-[calc(100%-1rem)] focus:outline-none"
                             required
                         />
                         <input
@@ -57,7 +57,7 @@ const MemoraForm = () => {
                             id="nombre"
                             name="nombre"
                             placeholder="Nombre"
-                            className="bg-transparent border-b border-black w-[320px] focus:outline-none"
+                            className="bg-transparent border-b border-black w-[320px] mobile:w-[calc(100%-1rem)] focus:outline-none"
                             required
                         />
                         <input
@@ -65,7 +65,7 @@ const MemoraForm = () => {
                             id="apellido"
                             name="apellido"
                             placeholder="Apellido"
-                            className="bg-transparent border-b border-black w-[320px] focus:outline-none"
+                            className="bg-transparent border-b border-black w-[320px] mobile:w-[calc(100%-1rem)] focus:outline-none"
                             required
                         />
                     </div>
@@ -76,7 +76,7 @@ const MemoraForm = () => {
                             id="email"
                             name="email"
                             placeholder="Email"
-                            className="bg-transparent border-b border-black w-[320px] focus:outline-none"
+                            className="bg-transparent border-b border-black w-[320px] mobile:w-[calc(100%-1rem)] focus:outline-none"
                             required
                         />
                         <input
@@ -84,14 +84,14 @@ const MemoraForm = () => {
                             id="codigo"
                             name="codigo"
                             placeholder="Código"
-                            className="bg-transparent border-b border-black w-[320px] focus:outline-none"
+                            className="bg-transparent border-b border-black w-[320px] mobile:w-[calc(100%-1rem)] focus:outline-none"
                         />
                         <input
                             type="text"
                             id="link"
                             name="link"
                             placeholder="Link"
-                            className="bg-transparent border-b border-black w-[320px] focus:outline-none"
+                            className="bg-transparent border-b border-black w-[320px] mobile:w-[calc(100%-1rem)] focus:outline-none"
                             required
                         />
                     </div>
