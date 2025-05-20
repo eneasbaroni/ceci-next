@@ -41,7 +41,7 @@ const sendMail = async (data: newEmailData) => {
 }
 
 const newPurchase = async (userMail: string, status: string) => {
-    console.log("🚀 ~ newPurchase ~ userMail:", userMail)
+
     let notification: string
     notification = 'Tu compra ha sido aprobada, nos pondremos en contacto para coordinar la entrega de los productos'
     
@@ -77,7 +77,6 @@ const newPurchase = async (userMail: string, status: string) => {
 
 const notification = async (userMail: string, paymentId: string, phone: string, status: string) => {
     const email = userMail;
-       console.log("🚀 ~ notification ~ email:", email)
        
 
     const emailContent = {

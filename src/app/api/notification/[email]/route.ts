@@ -16,9 +16,6 @@ export async function POST(req: NextRequest, { params }: { params: { email: stri
     const phone = searchParams.get('phone');
     const topic = searchParams.get('topic');
     const id = searchParams.get('id');
-    console.log("🚀 ~ POST ~ email:", email)
-    console.log("🚀 ~ POST ~ topic:", topic)
-    console.log("🚀 ~ POST ~ id:", id)
 
     if (topic != 'payment' || !id) {
         return new NextResponse(JSON.stringify({message: 'ok', status: 200}), {
