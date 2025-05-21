@@ -27,7 +27,7 @@ const Video = async ({ params: { code } }: { params: { code: string } }) => {
                 <VideoContainer data={res} />
             ) : (
                 <div className="flex flex-col justify-center items-center h-screen">
-                    <div className="w-96 m-auto h-[90vh] p-10 flex flex-col justify-center items-center border-white border-4  text-center rounded-full">
+                    <div className="w-96 mobile:w-auto mobile:max-w-72  m-auto h-[90vh] p-10 flex flex-col justify-center items-center border-white border-4  text-center rounded-full">
                         <p className="text-3xl text-white">✹</p>
                         <h1 className="text-3xl  font-bold">
                             No se encontró el video

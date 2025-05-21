@@ -31,7 +31,7 @@ const Admin = () => {
                             <VideoForm />
                         ) : (
                             <>
-                                <p className="text-xl mt-4">
+                                <p className="text-xl mt-4 mobile:text-sm">
                                     No tienes acceso a esta pagina
                                 </p>
                                 <Link
