@@ -51,7 +51,7 @@ const VideoContainer = ({ data }: IProps) => {
                     >
                         <p className="text-3xl text-white">✹</p>
                         <legend className="font-moneta text-3xl mb-2">
-                            Ingrede el Código
+                            Ingrese el Código
                         </legend>
                         <input
                             type="text"
