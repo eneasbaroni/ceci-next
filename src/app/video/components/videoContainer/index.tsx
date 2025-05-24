@@ -81,7 +81,7 @@ const VideoContainer = ({ data }: IProps) => {
           {data.ci === "JeroB" ? (
             <video
               controls
-              className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden"
+              className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden object-contain object-center"
               poster="/images/header/logo.svg"
             >
               <source src={data.link} type="video/mp4" />
