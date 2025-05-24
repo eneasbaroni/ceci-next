@@ -12,7 +12,7 @@ import Info from "./components/memoraList/info";
 
 const Admin = () => {
   const { data: session, status } = useSession();
-  const [memoraList, setMemoraList] = useState(true);
+  const [memoraList, setMemoraList] = useState(false);
 
   const handleList = () => {
     setMemoraList(!memoraList);
