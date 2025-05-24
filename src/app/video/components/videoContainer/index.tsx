@@ -75,14 +75,13 @@ const VideoContainer = ({ data }: IProps) => {
 
       {(data.codigo === "" || pass) && (
         <div
-          className="rounded-t-[1rem] overflow-hidden cursor-pointer p-2 h-[100dvh]"
+          className="rounded-t-[1rem] overflow-hidden cursor-pointer p-2 h-[100dvh] videoContainer"
           onClick={handlePlay}
         >
           {data.ci === "JeroB" ? (
             <video
               controls
-              className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden object-contain object-center"
-              poster="/images/header/logo.svg"
+              className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden"
             >
               <source src={data.link} type="video/mp4" />
             </video>
