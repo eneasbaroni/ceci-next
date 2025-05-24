@@ -33,7 +33,7 @@ const VideoContainer = ({ data }: IProps) => {
   return (
     <div className="relative">
       <img
-        src="/images/icon.svg"
+        src="/images/video/memoraIcon.png"
         alt="logo"
         className="w-10 h-10 absolute top-2 left-1/2 -translate-x-1/2"
       />
@@ -71,7 +71,7 @@ const VideoContainer = ({ data }: IProps) => {
         <div className="rounded-t-[1rem] overflow-hidden cursor-pointer p-2 h-[100dvh] videoContainer">
           <video
             controls
-            className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden"
+            className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden "
             poster="/images/video/poster.svg"
           >
             <source src={data.link} type="video/mp4" />
