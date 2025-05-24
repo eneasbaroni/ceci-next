@@ -82,6 +82,7 @@ const VideoContainer = ({ data }: IProps) => {
             <video
               controls
               className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden"
+              poster="/images/header/logo.svg"
             >
               <source src={data.link} type="video/mp4" />
             </video>
