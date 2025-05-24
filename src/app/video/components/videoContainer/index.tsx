@@ -16,8 +16,6 @@ const VideoContainer = ({ data }: IProps) => {
   const [error, setError] = useState(false);
   const [pass, setPass] = useState(false);
 
-  const [showVideo, setShowVideo] = useState(false);
-
   const handlePass = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError(false);
@@ -30,10 +28,6 @@ const VideoContainer = ({ data }: IProps) => {
       return;
     }
     setPass(true);
-  };
-
-  const handlePlay = () => {
-    setShowVideo(true);
   };
 
   return (
@@ -74,28 +68,14 @@ const VideoContainer = ({ data }: IProps) => {
       )}
 
       {(data.codigo === "" || pass) && (
-        <div
-          className="rounded-t-[1rem] overflow-hidden cursor-pointer p-2 h-[100dvh] videoContainer"
-          onClick={handlePlay}
-        >
-          {data.ci === "JeroB" ? (
-            <video
-              controls
-              className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden"
-              poster="/images/video/poster.svg"
-            >
-              <source src={data.link} type="video/mp4" />
-            </video>
-          ) : (
-            <iframe
-              src={data.link}
-              /* width="288"
-                        height="100" */
-              allowFullScreen
-              //className="h-[calc(100vh-1rem)] aspect-[9/17] m-auto rounded-t-[1rem] overflow-hidden"
-              className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden"
-            ></iframe>
-          )}
+        <div className="rounded-t-[1rem] overflow-hidden cursor-pointer p-2 h-[100dvh] videoContainer">
+          <video
+            controls
+            className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden"
+            poster="/images/video/poster.svg"
+          >
+            <source src={data.link} type="video/mp4" />
+          </video>
         </div>
       )}
     </div>

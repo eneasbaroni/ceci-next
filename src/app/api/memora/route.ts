@@ -33,3 +33,15 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ message: error.message }, { status: 500 }); // Devuelve 500 Internal Server Error para otros errores
     }
 }
+
+/* Get all */
+export async function GET(req: NextRequest) {
+    try {
+        await connectMongoDB();
+        const data = await Memora.find({});
+        return NextResponse.json(data);
+    } catch (error: any) {
+        console.error("Error al obtener los datos:", error);
+        return NextResponse.json({ message: error.message }, { status: 500 }); // Devuelve 500 Internal Server Error para otros errores
+    }
+}
