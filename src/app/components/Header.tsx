@@ -1,26 +1,11 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+
 import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
 
 const Header = () => {
-    const [viewWidth, setViewWidth] = useState<number>();
-    const [noHeight, setNoHeight] = useState(true);
-    const [menuHide, setMenuHide] = useState(true);
-
     const [showMenu, setShowMenu] = useState(false);
-
-    const pathname = usePathname();
-
-    useEffect(() => {
-        setViewWidth(window.innerWidth);
-    }, []);
-
-    const handleViewWidth = () => {
-        setViewWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleViewWidth);
 
     const handleMenu = () => {
         setShowMenu(!showMenu);
@@ -67,13 +52,11 @@ const Header = () => {
                                 height: "100%",
                                 width: "100%",
                                 borderRadius: "0rem",
-                                maxWidth: "2000px",
                             }}
                             animate={{
                                 height: "90%",
-                                width: "90%",
+                                width: "300px",
                                 borderRadius: "20rem",
-                                maxWidth: "300px",
                             }}
                             transition={{
                                 delay: 0.5,
