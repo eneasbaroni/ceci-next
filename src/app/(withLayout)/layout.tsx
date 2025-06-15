@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import localfont from "next/font/local";
 import { Inter } from "next/font/google";
@@ -16,10 +15,8 @@ import "../components/Loader.css";
 import "../components/EmailModal.css";
 import "./checkout/[status]/Checkout.css";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
+import NewFooter from "../components/newFooter";
 import { Providers } from "../Providers";
-
-const DynamicHeader = dynamic(async () => Header, { ssr: false });
 
 const moneta = localfont({
     src: [
@@ -59,9 +56,9 @@ export default function RootLayout({
         <html lang="en">
             <body className={`${raleway.className} ${moneta.variable} `}>
                 <Providers>
-                    <DynamicHeader />
+                    <Header />
                     {children}
-                    <Footer />
+                    <NewFooter />
                 </Providers>
             </body>
         </html>
