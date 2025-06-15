@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./components/videoContainer/styles.css";
 
 import { Raleway } from "next/font/google";
 import "../globals.css";

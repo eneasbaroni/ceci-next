@@ -70,19 +70,27 @@ const VideoContainer = ({ data }: IProps) => {
 
       {(data.codigo === "" || pass) && (
         <div className="rounded-t-[1rem] overflow-hidden cursor-pointer p-2 h-[100dvh] videoContainer">
-          <video
-            controls
-            className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden "
-            poster="/images/video/poster.svg"
-          >
-            <source src={data.link} type="video/mp4" />
-          </video>
+          <iframe
+            src={data.link}
+            allowFullScreen
+            className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden"
+          ></iframe>
         </div>
       )}
     </div>
   );
 };
 export default VideoContainer;
+
+/* 
+<video
+            controls
+            className="h-full w-full m-auto rounded-t-[1rem] overflow-hidden "
+            poster="/images/video/poster.svg"
+          >
+            <source src={data.link} type="video/mp4" />
+          </video>
+*/
 
 /* 
 <iframe
