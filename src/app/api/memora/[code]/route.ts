@@ -4,9 +4,9 @@ import { NextResponse, NextRequest } from "next/server";
 
 export async function GET(
     req: NextRequest,
-    { params }: { params: { code: string } }
+    { params }: { params: Promise<{ code: string }> },
 ) {
-    const { code } = params;
+    const { code } = await params;
 
     const ci = code;
 
