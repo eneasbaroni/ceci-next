@@ -55,7 +55,7 @@ export function EventCard({
         </p>
         <button
           onClick={() => onVerMas(evento)}
-          className="absolute bottom-4 right-1/2 translate-x-1/2 flex items-center gap-1.5 text-sm font-medium text-[#968ab9] transition-opacity hover:opacity-70 font-moneta uppercase"
+          className="absolute bottom-10 right-1/2 translate-x-1/2 flex items-center gap-1.5 text-sm font-medium text-[#968ab9] transition-opacity hover:opacity-70 font-moneta uppercase"
         >
           ver más
         </button>
