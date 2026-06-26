@@ -1,0 +1,70 @@
+{
+  "intro": {
+    "titulo": "Trayectoria y gestión institucional",
+    "descripcion": "Soy presidenta y cofundadora de la Fundación Argentina para el Duelo, desde allí hemos impulsado proyectos de alcance nacional e internacional orientados a la educación, la sensibilización y la transformación cultural en torno al duelo. Estas iniciativas buscan visibilizar el duelo, promover una cultura más compasiva frente a la muerte y generar espacios de acompañamiento, reflexión y aprendizaje.",
+    "fotos": [
+      "/images/events/inicio-fundacion-duelarf-01.jpg",
+      "/images/events/inicio-fundacion-duelarf-02.jpg"
+    ]
+  },
+  "eventos": [
+    {
+      "id": "jornada-suicidio-2025",
+      "fecha": "2025-09",
+      "fechaDisplay": "Septiembre de 2025",
+      "titulo": "Jornada \"Una conversación pendiente: hablemos de suicidio\"",
+      "rol": "Organizadora",
+      "excerpt": "Encuentro de concientización y prevención para promover el diálogo abierto y derribar estigmas en torno al suicidio.",
+      "descripcion": "Encuentro de concientización y prevención destinado a promover el diálogo abierto sobre la temática, derribar estigmas y brindar herramientas de escucha y acompañamiento a la comunidad. La jornada contó con la participación de destacados referentes nacionales, entre ellos el actor y comunicador Gastón Pauls y la Lic. Alejandra Rossi, experta en la temática, generando un espacio de reflexión profunda sobre una problemática que continúa siendo una de las conversaciones más necesarias de nuestro tiempo.",
+      "fotos": [
+        "/images/events/jornada-conversacion-pendiente-01.jpg",
+        "/images/events/jornada-conversacion-pendiente-02.jpg",
+        "/images/events/jornada-conversacion-pendiente-03.jpg",
+        "/images/events/jornada-conversacion-pendiente-04.jpg"
+      ]
+    },
+    {
+      "id": "congreso-duelo-2026",
+      "fecha": "2026-03-06",
+      "fechaDisplay": "Marzo de 2026",
+      "titulo": "I Congreso Internacional de Duelo",
+      "rol": "Organizadora y disertante",
+      "excerpt": "Reunió a profesionales y especialistas de distintos países, en una fecha especialmente significativa para mi historia personal.",
+      "descripcion": "Evento académico y comunitario que reunió a profesionales, especialistas y personas interesadas en la temática del duelo de distintos países. Celebrado el 6 de marzo de 2026, fecha especialmente significativa por coincidir con el nacimiento de mi hijo Jero, este congreso representó un hito en la visibilización y profesionalización del acompañamiento en duelo en la región. Además de liderar la organización integral del evento desde la Fundación Argentina para el Duelo, participé como disertante con la ponencia \"La muerte de un hijo: duelo, ruptura y transformación\", compartiendo reflexiones surgidas de mi experiencia personal, formación y trabajo con personas en duelo.",
+      "fotos": [
+        "/images/events/congreso-duelo-01.jpg",
+        "/images/events/congreso-duelo-02.jpg",
+        "/images/events/congreso-duelo-03.jpg",
+        "/images/events/congreso-duelo-04.jpeg"
+      ]
+    },
+    {
+      "id": "capacitacion-perinatal-2026",
+      "fecha": "2026-05",
+      "fechaDisplay": "Mayo de 2026",
+      "titulo": "Capacitación \"Frente a la muerte perinatal y gestacional: herramientas para la primera línea\"",
+      "rol": "Capacitadora",
+      "excerpt": "Formación para profesionales de la salud con herramientas de intervención temprana ante la muerte gestacional y perinatal.",
+      "descripcion": "Jornada de formación especializada destinada a profesionales de la salud, orientada a brindar herramientas de intervención temprana, acompañamiento y contención ante situaciones de muerte gestacional y perinatal. La propuesta buscó fortalecer las prácticas de atención en hospitales, clínicas y centros de salud, promoviendo una mirada más humana y respetuosa hacia las familias que atraviesan estas pérdidas.",
+      "fotos": [
+        "/images/events/capacitacion-perinatal-01.jpg",
+        "/images/events/capacitacion-perinatal-02.jpg",
+        "/images/events/capacitacion-perinatal-03.jpg"
+      ]
+    },
+    {
+      "id": "legado-de-papa",
+      "fecha": "2026-06",
+      "fechaDisplay": "Junio de 2026",
+      "titulo": "\"El legado de papá\"",
+      "rol": "Coorganizadora y oradora",
+      "excerpt": "Encuentro conmemorativo para recordar y mantener viva la presencia de los padres fallecidos a través de sus legados.",
+      "descripcion": "Iniciativa conmemorativa desarrollada en alianza entre la Fundación Argentina para el Duelo, el Cementerio Parque La Naturaleza y Paviotti Servicios Exequiales. El encuentro fue concebido como un espacio para recordar, compartir historias y mantener viva la presencia de los padres fallecidos a través de sus legados, enseñanzas y huellas en la vida de sus familias. Durante la jornada tuve el honor de brindar las palabras de apertura y acompañamiento a las personas presentes, promoviendo un espacio de encuentro, memoria y reflexión.",
+      "fotos": [
+        "/images/events/legado-de-papa-01.jpg",
+        "/images/events/legado-de-papa-02.jpg",
+        "/images/events/legado-de-papa-03.jpg"
+      ]
+    }
+  ]
+}
