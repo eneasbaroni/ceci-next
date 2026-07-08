@@ -99,9 +99,9 @@ export function EventDetail({ evento, onClose }: EventDetailProps) {
               {evento.ponencia && (
                 <div className="mt-6 border-l-2 border-neutral-300 pl-4">
                   <p className="text-xs font-medium uppercase tracking-wide text-neutral-400">
-                    Ponencia
+                    Disertación
                   </p>
-                  <p className="mt-1 text-base font-medium italic text-neutral-800">
+                  <p className="mt-1 text-base font-medium italic text-[#968ab9]">
                     "{evento.ponencia}"
                   </p>
                 </div>
