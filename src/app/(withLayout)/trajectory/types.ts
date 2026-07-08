@@ -4,6 +4,7 @@ export interface Evento {
   fechaDisplay: string // texto que se muestra al usuario, ej. "Marzo de 2026"
   titulo: string
   rol: string
+  ponencia?: string
   excerpt: string // resumen corto curado a mano, usado en la card
   descripcion: string
   fotos: string[]

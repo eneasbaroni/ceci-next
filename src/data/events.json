@@ -29,6 +29,7 @@
       "fechaDisplay": "Marzo de 2026",
       "titulo": "I Congreso Internacional de Duelo",
       "rol": "Organizadora y disertante",
+      "ponencia": "La muerte de un hijo: duelo, ruptura y transformación",
       "excerpt": "Reunió a profesionales y especialistas de distintos países, en una fecha especialmente significativa para mi historia personal.",
       "descripcion": "Evento académico y comunitario que reunió a profesionales, especialistas y personas interesadas en la temática del duelo de distintos países. Celebrado el 6 de marzo de 2026, fecha especialmente significativa por coincidir con el nacimiento de mi hijo Jero, este congreso representó un hito en la visibilización y profesionalización del acompañamiento en duelo en la región. Además de liderar la organización integral del evento desde la Fundación Argentina para el Duelo, participé como disertante con la ponencia \"La muerte de un hijo: duelo, ruptura y transformación\", compartiendo reflexiones surgidas de mi experiencia personal, formación y trabajo con personas en duelo.",
       "fotos": [
@@ -43,7 +44,7 @@
       "fecha": "2026-05",
       "fechaDisplay": "Mayo de 2026",
       "titulo": "Capacitación \"Frente a la muerte perinatal y gestacional: herramientas para la primera línea\"",
-      "rol": "Coorganizadora y capacitadora",
+      "rol": "Coorganizadora",
       "excerpt": "Formación para profesionales de la salud con herramientas de intervención temprana ante la muerte gestacional y perinatal.",
       "descripcion": "Jornada de formación especializada destinada a profesionales de la salud, orientada a brindar herramientas de intervención temprana, acompañamiento y contención ante situaciones de muerte gestacional y perinatal. La propuesta buscó fortalecer las prácticas de atención en hospitales, clínicas y centros de salud, promoviendo una mirada más humana y respetuosa hacia las familias que atraviesan estas pérdidas.",
       "fotos": [
@@ -61,7 +62,6 @@
       "excerpt": "Encuentro conmemorativo para recordar y mantener viva la presencia de los padres fallecidos a través de sus legados.",
       "descripcion": "Iniciativa conmemorativa desarrollada en alianza entre la Fundación Argentina para el Duelo, el Cementerio Parque La Naturaleza y Paviotti Servicios Exequiales. El encuentro fue concebido como un espacio para recordar, compartir historias y mantener viva la presencia de los padres fallecidos a través de sus legados, enseñanzas y huellas en la vida de sus familias. Durante la jornada tuve el honor de brindar las palabras de apertura y acompañamiento a las personas presentes, promoviendo un espacio de encuentro, memoria y reflexión.",
       "fotos": [
-        "/images/events/legado-de-papa-01.jpg",
         "/images/events/legado-de-papa-02.jpg",
         "/images/events/legado-de-papa-03.jpg"
       ]

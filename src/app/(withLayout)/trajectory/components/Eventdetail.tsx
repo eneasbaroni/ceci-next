@@ -96,6 +96,17 @@ export function EventDetail({ evento, onClose }: EventDetailProps) {
                 {evento.descripcion}
               </p>
 
+              {evento.ponencia && (
+                <div className="mt-6 border-l-2 border-neutral-300 pl-4">
+                  <p className="text-xs font-medium uppercase tracking-wide text-neutral-400">
+                    Ponencia
+                  </p>
+                  <p className="mt-1 text-base font-medium italic text-neutral-800">
+                    "{evento.ponencia}"
+                  </p>
+                </div>
+              )}
+
               {evento.fotos.length > 1 && (
                 <div className="mt-8 grid grid-cols-2 gap-3">
                   {evento.fotos.slice(1).map((foto, i) => (
