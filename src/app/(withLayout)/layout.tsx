@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     siteName: 'Cecilia Torres',
     images: [
       {
-        url: 'https://www.ceciliatorres.com.ar/images/icon.svg',
+        url: 'https://www.ceciliatorres.com.ar/images/og-image.png',
         width: 800,
         height: 800,
         alt: 'Cecilia Torres - Tanatóloga',
