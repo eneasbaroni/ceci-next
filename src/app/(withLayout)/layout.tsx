@@ -1,66 +1,82 @@
-import type { Metadata } from "next";
-import localfont from "next/font/local";
-import { Inter } from "next/font/google";
-import { Source_Sans_3 } from "next/font/google";
-import { Raleway } from "next/font/google";
-import "../globals.css";
-import "../components/header.css";
-import "../components/footer.css";
-import "./(index)/home.css";
-import "./books/Books.css";
-import "./about/About.css";
-import "./contact/Contact.css";
-import "./purchase/[id]/Purchase.css";
-import "../components/Loader.css";
-import "../components/EmailModal.css";
-import "./checkout/[status]/Checkout.css";
-import Header from "../components/Header";
-import NewFooter from "../components/newFooter";
-import { Providers } from "../Providers";
+import type { Metadata } from 'next'
+import localfont from 'next/font/local'
+import { Inter } from 'next/font/google'
+import { Source_Sans_3 } from 'next/font/google'
+import { Raleway } from 'next/font/google'
+import '../globals.css'
+import '../components/header.css'
+import '../components/footer.css'
+import './(index)/home.css'
+import './books/Books.css'
+import './about/About.css'
+import './contact/Contact.css'
+import './purchase/[id]/Purchase.css'
+import '../components/Loader.css'
+import '../components/EmailModal.css'
+import './checkout/[status]/Checkout.css'
+import Header from '../components/Header'
+import NewFooter from '../components/newFooter'
+import { Providers } from '../Providers'
 
 const moneta = localfont({
-    src: [
-        {
-            path: "../../fonts/Moneta-Regular.ttf",
-            weight: "400",
-        },
-    ],
-    variable: "--font-moneta",
-});
+  src: [
+    {
+      path: '../../fonts/Moneta-Regular.ttf',
+      weight: '400',
+    },
+  ],
+  variable: '--font-moneta',
+})
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 const source_sans_3 = Source_Sans_3({
-    subsets: ["latin"],
-});
+  subsets: ['latin'],
+})
 
 const raleway = Raleway({
-    subsets: ["latin"],
-});
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
-    title: "Cecilia Torres",
-    description: "Cecilia Torres-Tanatóloga",
-    icons: {
-        icon: "./images/icon.svg",
-        shortcut: "./images/icon.svg",
-        apple: "./images/icon.svg",
-    },
-};
+  title: 'Cecilia Torres',
+  description: 'Cecilia Torres-Tanatóloga',
+  icons: {
+    icon: './images/icon.svg',
+    shortcut: './images/icon.svg',
+    apple: './images/icon.svg',
+  },
+  openGraph: {
+    title: 'Cecilia Torres',
+    description: 'Cecilia Torres-Tanatóloga',
+    url: 'https://www.ceciliatorres.com.ar',
+    siteName: 'Cecilia Torres',
+    images: [
+      {
+        url: 'https://www.ceciliatorres.com.ar/images/icon.svg',
+        width: 800,
+        height: 800,
+        alt: 'Cecilia Torres - Tanatóloga',
+      },
+    ],
+    locale: 'es_AR',
+    type: 'website',
+  },
+}
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode
 }>) {
-    return (
-        <html lang="en">
-            <body className={`${raleway.className} ${moneta.variable} `}>
-                <Providers>
-                    <Header />
-                    {children}
-                    <NewFooter />
-                </Providers>
-            </body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body className={`${raleway.className} ${moneta.variable} `}>
+        <Providers>
+          <Header />
+          {children}
+          <NewFooter />
+        </Providers>
+      </body>
+    </html>
+  )
 }
