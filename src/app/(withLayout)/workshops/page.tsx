@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { Metadata } from 'next'
 import { connectMongoDB } from '../../../lib/mongodb'
 import Workshop from '../../api/DAO/models/workshop.model'
