@@ -1,22 +1,21 @@
-"use client";
+'use client'
 
-import Link from "next/link";
-import { useSession, signIn, signOut, getSession } from "next-auth/react";
-import VideoForm from "./components/memoraForm";
-import Loader from "../../components/Loader";
-import ProfileContainer from "./components/profileContainer";
-import { useState } from "react";
-import MemoraList from "./components/memoraList";
-import { AnimatePresence } from "framer-motion";
-import Info from "./components/memoraList/info";
+import Link from 'next/link'
+import { useSession, signIn } from 'next-auth/react'
+import VideoForm from './components/memoraForm'
+import Loader from '../../components/Loader'
+import ProfileContainer from './components/profileContainer'
+import { useState } from 'react'
+import MemoraList from './components/memoraList'
+import { AnimatePresence } from 'framer-motion'
 
 const Admin = () => {
-  const { data: session, status } = useSession();
-  const [memoraList, setMemoraList] = useState(false);
+  const { data: session, status } = useSession()
+  const [memoraList, setMemoraList] = useState(false)
 
   const handleList = () => {
-    setMemoraList(!memoraList);
-  };
+    setMemoraList(!memoraList)
+  }
 
   return (
     <div className="px-4 bg-slate-600 min-h-[calc(100vh-8rem)] bg-[url(/images/index/cloud.svg)] bg-no-repeat bg-cover bg-center">
@@ -26,7 +25,7 @@ const Admin = () => {
         )}
       </AnimatePresence>
       <h1 className="m-0 text-center mobile:text-2xl">Panel Administrador</h1>
-      {status === "loading" && <Loader />}
+      {status === 'loading' && <Loader />}
       {session ? (
         <div className="flex flex-col min-h-[calc(100vh-11rem)] pb-4 items-center justify-start relative">
           <div className="flex flex-col items-center justify-center">
@@ -69,9 +68,9 @@ const Admin = () => {
           </h3>
           <button
             className="w-40 mobile: flex gap-2 align-center justify-center bg-[#968ab9] mobile:text-xs items-center text-white rounded-md p-4 mobile:p-2 m-auto mt-4 hover:bg-[#fbfbfb] hover:text-[#968ab9] transition-all duration-300"
-            onClick={() => signIn("google")}
+            onClick={() => signIn('google')}
           >
-            Iniciar sesion{" "}
+            Iniciar sesion{' '}
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png"
               alt="google icon"
@@ -81,6 +80,6 @@ const Admin = () => {
         </div>
       )}
     </div>
-  );
-};
-export default Admin;
+  )
+}
+export default Admin
