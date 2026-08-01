@@ -5,9 +5,9 @@ export const metadata: Metadata = {
     description: "Cecilia Torres-Tanatóloga",
     //icon
     icons: {
-        icon: "./images/icon.svg",
-        shortcut: "./images/icon.svg",
-        apple: "./images/icon.svg",
+        icon: "/images/icon.svg",
+        shortcut: "/images/icon.svg",
+        apple: "/images/icon.svg",
     },
 };
 
